@@ -1,6 +1,6 @@
 ## Goal
 
-This demo demonstrate how to use pprof to diagnose CPU usage
+This demo demonstrates how to use pprof to diagnose CPU usage.
 
 The goal of these programs is to generate a HTTP request according to a Req struct and template data.
 
@@ -8,7 +8,7 @@ The goal of these programs is to generate a HTTP request according to a Req stru
 
 The 'old' program maintains some templates for URL, body, each header and query. Those templates will be executed to generate settings of a HTTP request.
 
-The 'new' program use only one template which is JSON encoded Req struct. It will be executed and then decoded into Req struct with actual settings.
+The 'new' program use only one template which is JSON encoded Req struct. It will be executed and then decoded into Req struct with rendered parameters.
 
 Tool 'pprof' can be used to analyse the performance of these two methods.
 
